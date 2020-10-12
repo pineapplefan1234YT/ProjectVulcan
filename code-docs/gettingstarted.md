@@ -31,7 +31,7 @@ Heres a list of things you are going to need in order to have a working test:
 
 # Connecting cables
 
-You'll need to make sure cables are in the right ports. A full diagram of all cables can be found [here](https://cdn11.bigcommerce.com/s-t3eo8vwp22/images/stencil/500x500/products/391/1330/Control_Hub_Wiring_Reference_Sheet_Website_Photo__13208.1563821357.png?c=2)
+You'll need to make sure cables are in the right ports. A full diagram of all cables can be found [here](https://cdn11.bigcommerce.com/s-t3eo8vwp22/images/stencil/500x500/products/391/1330/Control_Hub_Wiring_Reference_Sheet_Website_Photo__13208.1563821357.png?c=2).
 
 {% hint style="warning" %}
 The image is the wiring guide for a Control Hub, however the wires are the same for an Expansion Hub. The only additional cable is the phone cable at the back of the Hub.
@@ -44,3 +44,25 @@ The cables you need to add are as follows:
 - If you are using an Expansion Hub, connect the phone using 2 different cables. Place a USB to USB Micro into into the back of the Hub. Connect a phone to this using a feminine USB on one end, and the adapter needed for your team's phone on the other.
 - Place the servo into port `0` in the front slots. There is a long line of many different servo connections, but it is easier to use `0`. It may be the wrong way around, but you can flip it later if it does not spin.
 - The motor needs 2 wires. Place the red and black wire into motor port `0`, and the data wire into the slot nearest to it. It may be hard to get the wires in place. The other end of each cable will plug into a motor.
+
+-----
+
+# Connecting the phones - Expansion Hub
+
+You need 2 phones, RC (Robot Controler) and DS (Driver Station).
+Both of these deviced need to communicate in order to drive your robot.
+
+Firstly, the RC is plugged into the expansion hub, and the DS has nothing plugged in yet.
+The RC will create a WiFi signal, which can be connected to by a number of devices. You will need your DS, and optionally a computer or laptop.
+
+On your RC, click in the top right, and select `Program and Manage`. This screen contains your connection name and password. Make sure not to share this with other teams.
+
+Open the settings app on your DS, and head to WiFi. Select your WiFi network and join it. In the future, you may not need to do this step, as the 2 phones are paired and will prompt you to accept or decline a connection.
+
+With this connection, if you return to your Driver Station app, you should see the Expansion Hub have a Green light (see colour coding above).
+
+-----
+
+# Programming
+
+Next up is to add some code.
