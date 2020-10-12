@@ -1,5 +1,5 @@
 ---
-description: FTC // Project Vulcan
+description: ./ FTC / Project Vulcan
 ---
 
 # Project Vulcan
