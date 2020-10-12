@@ -63,7 +63,47 @@ With this connection, if you return to your Driver Station app, you should see t
 
 -----
 
+# Configuration
+
+Click in the top right and select Configure Robot.
+This is where you assign devices and names.
+
+Create a new configuration.
+Next, add an Expansion or Control Hub. Just click `scan` at the top and wait until one is detected. If it does not appear, this could be either a connection issue, or faulty wires.
+Select "Expansion Hub 2" or similar if you are prompted with it.
+
+You need to add a few things on this page. Refer to the [Wiring guide](https://cdn11.bigcommerce.com/s-t3eo8vwp22/images/stencil/500x500/products/391/1330/Control_Hub_Wiring_Reference_Sheet_Website_Photo__13208.1563821357.png?c=2) if you need advice on where things go.
+- Motors / port `0` - Add the type of motor you plugged in, usually found on the product label. Give it the name `motor` if you are using the example code in the next step.
+- Servos / port `0` - Add the type of servo you plugged in, most likely you want the one called `servo`. Give it the name `servo` if you are using the example code in the next step.
+
+-----
+
 # Programming
 
 Next up is to add some code.
-![Code example](https://github.com/pineapplefan1234YT/ProjectVulcan/blob/master/assets/New.png?raw=true)
+If you are on a computer or laptop, you can edit code and settings at `192.168.49.1:8080`. You need to be connected to the phone's WiFi.
+
+Here is an example which will do 2 things:
+
+![Code example](https://github.com/pineapplefan1234YT/ProjectVulcan/blob/master/assets/Images/New.png?raw=true)
+[Download here](https://github.com/pineapplefan1234YT/ProjectVulcan/blob/master/assets/Code/New.blk)
+
+- Spin a motor constantly
+- Spin a servo left, then right
+- Loop
+
+Click "Save OP Mode" in the top left to save your code. It will update on the app automatically, no restart required.
+On your DC, select the right dropdown, and choose "New".
+If new does not appear, try restarting the app, checking your code was saved, and you are connected to the phone's WiFi
+
+Hit the **Init**ialise button, then the play button to run the code. Click it again to stop.
+
+{% hint style="info" %}
+The left dropdown means Autonomous scripts. This can be chosen when editing code.
+The right dropdown means TeleOP, or Driver Controlled.
+{% endhint %}
+
+If this does not happen there are a few things to check.
+
+Any errors on the phone:
+Missing device errors can be common. Just check your configuration uses the name "motor" and "servo" in port `0` of their respective category.
