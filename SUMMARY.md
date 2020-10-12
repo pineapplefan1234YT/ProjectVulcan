@@ -4,5 +4,5 @@
 
 ## Code Docs
 
-* [Code Tests](code-docs/Testing.md)
+* [Getting Started](code-docs/gettingstarted.md)
 
